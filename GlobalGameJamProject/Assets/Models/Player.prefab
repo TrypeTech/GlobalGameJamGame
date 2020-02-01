@@ -220,7 +220,7 @@ MonoBehaviour:
   walkSpeed: 2
   runSpeed: 6
   gravity: -12
-  jumpHeight: 1
+  jumpHeight: 2
   airControlPercent: 0
   turnSmoothTime: 0.2
   speedSmoothTime: 0.1
