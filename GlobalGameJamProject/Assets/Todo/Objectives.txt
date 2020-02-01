@@ -1,0 +1,16 @@
+3d platformer:
+
+Third Person controller:(stebe)
+move set
+double jump
+slam jump
+attack
+Third person camera
+
+enemy(mikemike)
+
+collection system(stebe)
+platform trigger button(mikemike)
+moveing platforms(mikemike)
+
+
