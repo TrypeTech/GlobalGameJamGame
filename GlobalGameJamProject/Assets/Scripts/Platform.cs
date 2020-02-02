@@ -15,13 +15,13 @@ public class Platform : MonoBehaviour
     public float resetTime;
     void Start()
     {
-        
+        ChangeTarget();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+         movingPlatform.position = Vector3.Lerp(movingPlatform.position, newPosition, smooth * Time.deltaTime);
     }
     // This Function detects if the player caliding with it and returns true or false
     void OnTriggerEnter(Collider other) {
@@ -37,10 +37,6 @@ public class Platform : MonoBehaviour
         }
     }
 
-    void movePlatform()
-    {
-        movingPlatform.position = Vector3.Lerp(movingPlatform.position, newPosition, smooth * Time.deltaTime);
-    }
     void ChangeTarget()
     {
         if(currentState == "Moving To Position 1"){
